@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSet" targetNamespace="http://tempuri.org/DSet.xsd" xmlns:mstns="http://tempuri.org/DSet.xsd" xmlns="http://tempuri.org/DSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\bin\x86\Debug\DataBase\db.accdb" IsAppSettingsProperty="false" Modifier="Assembly" Name="db.accdb2" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSet" msprop:Generator_UserDSName="DSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblTempReservations" msprop:Generator_TableClassName="tblTempReservationsDataTable" msprop:Generator_TableVarName="tabletblTempReservations" msprop:Generator_TablePropName="tblTempReservations" msprop:Generator_RowDeletingName="tblTempReservationsRowDeleting" msprop:Generator_RowChangingName="tblTempReservationsRowChanging" msprop:Generator_RowEvHandlerName="tblTempReservationsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblTempReservationsRowDeleted" msprop:Generator_UserTableName="tblTempReservations" msprop:Generator_RowChangedName="tblTempReservationsRowChanged" msprop:Generator_RowEvArgName="tblTempReservationsRowChangeEvent" msprop:Generator_RowClassName="tblTempReservationsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="res_no" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnres_no" msprop:Generator_ColumnPropNameInRow="res_no" msprop:Generator_ColumnPropNameInTable="res_noColumn" msprop:Generator_UserColumnName="res_no" type="xs:int" />
+              <xs:element name="res_start" msprop:Generator_ColumnVarNameInTable="columnres_start" msprop:Generator_ColumnPropNameInRow="res_start" msprop:Generator_ColumnPropNameInTable="res_startColumn" msprop:Generator_UserColumnName="res_start" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="res_end" msprop:Generator_ColumnVarNameInTable="columnres_end" msprop:Generator_ColumnPropNameInRow="res_end" msprop:Generator_ColumnPropNameInTable="res_endColumn" msprop:Generator_UserColumnName="res_end" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="room_no" msprop:Generator_ColumnVarNameInTable="columnroom_no" msprop:Generator_ColumnPropNameInRow="room_no" msprop:Generator_ColumnPropNameInTable="room_noColumn" msprop:Generator_UserColumnName="room_no" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="res_price0" msdata:Caption="res_price" msprop:Generator_ColumnVarNameInTable="columnres_price0" msprop:Generator_ColumnPropNameInRow="res_price0" msprop:Generator_ColumnPropNameInTable="res_price0Column" msprop:Generator_UserColumnName="res_price0" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblTempReservations" />
+      <xs:field xpath="mstns:res_no" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
